@@ -5,3 +5,10 @@
     padding: 0;
     font-family: 'Source Code Pro', monospace;
 }
+
+$fullWhite: #FFFFFF;
+$lightBlue: #2A3670;
+$darkBlue: #27336D;
+$grey: #F2F2F2;
+
+@import './components/home/main';
