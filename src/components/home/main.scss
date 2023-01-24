@@ -1,0 +1,10 @@
+#home-wrapper {
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    #logo {
+        width: 25vw;
+        height: 50vh;
+    }
+}
