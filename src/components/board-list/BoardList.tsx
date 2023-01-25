@@ -1,6 +1,6 @@
 const BoardList = () => {
     return (
-        <div>
+        <div id="boardlist-wrapper">
             <ul>
                 <li><a href="">/prasit</a> - Sítě a praxe by Zvíře</li>
                 <li><a href="">/pro</a> - Skoro vše o programování</li>
