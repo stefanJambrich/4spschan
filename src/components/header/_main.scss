@@ -1,0 +1,20 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 3px solid $darkBlue;
+    
+    p > a {
+        text-decoration: none;
+    }
+
+    #title {
+        margin-top: 15px;
+        margin-bottom: -30px;
+    }
+
+    #board-logo {
+        width: 18vw;
+    }
+}

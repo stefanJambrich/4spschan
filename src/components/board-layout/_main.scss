@@ -1,0 +1,16 @@
+#layout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $grey;
+
+    #children-wrapper {
+        background-color: $fullWhite;
+        width: 97vw;
+        height: 100vh;
+        border-radius: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

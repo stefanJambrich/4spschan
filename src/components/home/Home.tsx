@@ -1,5 +1,6 @@
 import logo from '../../assets/spsmb_logo.png'
 import BoardList from '../board-list/BoardList';
+import Footer from '../footer/Footer';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <img src={logo} alt="spsmb logo" id='logo' />
             <h1>4spschan.org</h1>
             <BoardList />
+            <Footer />
         </div>
     );
 }
