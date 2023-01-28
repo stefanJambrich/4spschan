@@ -11,10 +11,63 @@
 
     #title {
         margin-top: 15px;
-        margin-bottom: -30px;
     }
 
     #board-logo {
-        width: 18vw;
+        width: 18vmax;
+    }
+
+    #new-thread-creation {
+        button {
+            border: none;
+            border-top: 3px solid $lightBlue;
+            border-bottom: 3px solid $lightBlue;
+            font-size: 25px;
+            cursor: pointer;
+            margin-bottom: 20px;
+
+            &:hover {
+                color: $darkBlue;
+            }
+        }
+
+        #untoggled {
+            display: none;
+        }
+
+        #new-thread-toggled-btn {
+            border-bottom: none;
+        }
+
+        #new-thread-toggled {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 3px solid $lightBlue;
+
+            input, textarea {
+                border: 3px solid $lightBlue;
+                background-color: transparent;
+                padding: 5px;
+                margin: 5px;
+                resize: none;
+            }
+
+            textarea {
+                height: 100px;
+            }
+
+            button {
+                border: 3px solid $lightBlue;
+                padding: 5px;
+                transition: .3s ease;
+                margin: 20px;
+
+                &:hover {
+                    background-color: $darkBlue;
+                    color: $fullWhite;
+                }
+            }
+        }
     }
 }

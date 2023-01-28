@@ -6,9 +6,13 @@
     background-color: $grey;
 
     #children-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         background-color: $fullWhite;
         width: 97vw;
-        height: 100vh;
+        min-height: 100vh;
         border-radius: 25px;
         margin-top: 20px;
         margin-bottom: 20px;

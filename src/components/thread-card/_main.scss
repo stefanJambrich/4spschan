@@ -1,0 +1,25 @@
+#card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 12vmax;
+    border: 4px solid $darkBlue;
+    word-wrap: break-word;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+
+    #replies-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+
+    img {
+        width: 12vmax;
+    }
+}
