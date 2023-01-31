@@ -27,6 +27,6 @@ Thread.hasMany(Reply);
 })();
 
 (async () => {
-    await sequelize.sync({ force: true });
+    await sequelize.sync();
     console.log('juch');
 })();
