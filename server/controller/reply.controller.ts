@@ -23,3 +23,11 @@ export const createReply = async (req: Request, res: Response) => {
     await Reply.sync();
     return res.send(200).send('Reply created successfully');
 }
+
+export const deleteThread = async (req: Request, res: Response) => {
+    const { replyId } = req.body;
+    if(!replyId) return res.status(400).send('Missing body');
+
+    await Reply.destroy({ where: { id: replyId }});
+    return res.status(200).send('Reply deleted successfully');
+}
