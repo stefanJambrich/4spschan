@@ -8,6 +8,7 @@ const Thread = sequelize.define('thread_table', {
         allowNull: false,
         primaryKey: true
     },
+    category: STRING,
     title: STRING,
     description: TEXT,
     img: STRING,
