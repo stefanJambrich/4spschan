@@ -3,8 +3,11 @@ import { BrowserRouter } from "react-router-dom";
 import BoardLayout from "./components/board-layout/BoardLayout";
 import Board from "./components/board/Board";
 import Home from "./components/home/Home";
+import dotenv from 'dotenv';
 
 const App = () => {
+  dotenv.config();
+
   return (
     <div>
       <BrowserRouter>
