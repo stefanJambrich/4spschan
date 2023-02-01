@@ -21,7 +21,7 @@ export const getThread = async (req: Request, res: Response) => {
 }
 
 export const getThreads = async (req: Request, res: Response) => {
-    const { board } = req.body;
+    const { board } = req.params;
     if (!board) return res.status(400).send('Missing body');
 
     const threads = await Thread.findAll({ where: { board: board }});

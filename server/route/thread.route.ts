@@ -4,7 +4,7 @@ import { createThread, deleteThread, getThread, getThreads } from "../controller
 const router = express.Router();
 
 router.get('/', getThread);
-router.get('/all', getThreads);
+router.get('/:board/all', getThreads);
 router.post('/', createThread);
 router.delete('/', deleteThread);
 
