@@ -1,6 +1,29 @@
-#title-wrapper {
-    
+#layout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $grey;
+
+    #children-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: $fullWhite;
+        width: 97vw;
+        min-height: 100vh;
+        border-radius: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #thread-link {
+            text-decoration: none;
+            color: $darkBlue;
+            width: fit-content;
+            height: fit-content;
+            margin: 20px;
+        }
+    }
 }
-
-
 

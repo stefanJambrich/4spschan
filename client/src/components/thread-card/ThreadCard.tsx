@@ -7,7 +7,7 @@ interface Props {
     description: string
 }
 
-const ThreadCard: React.FC<{ props: Props }> = ({ props }) => {
+const ThreadCard: React.FC<Props> = (props) => {
     return (
         <div id="card-wrapper">
             <img src={card} alt="" />

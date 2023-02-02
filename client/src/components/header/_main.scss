@@ -39,7 +39,7 @@
             border-bottom: none;
         }
 
-        #new-thread-toggled {
+        #new-thread-toggled > form {
             display: flex;
             justify-content: center;
             flex-direction: column;

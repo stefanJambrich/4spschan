@@ -1,5 +1,5 @@
 {
-    "URl": "http://localhost",
+    "URL": "http://localhost",
     "PORT": 8080,
     "API": "api"
 }
