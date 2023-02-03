@@ -1,0 +1,30 @@
+#thread-wrapper > #thread {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 94vw;
+    margin-top: 20px;
+    border: 4px solid $darkBlue;
+    border-radius: 20px;
+
+    img {
+        width: 15vmax;
+        border: 2px solid $lightBlue;
+    }
+
+    #text {
+        margin-left: 10px;
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        & > * {
+            margin-bottom: 5px;
+        }
+    }
+
+    span {
+        color: $lightBlue;
+    }
+}

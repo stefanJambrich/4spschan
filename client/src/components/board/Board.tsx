@@ -1,9 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ThreadCard from "../thread-card/ThreadCard";
 import axios from 'axios';
 import URL from '../../constants/URL.json';
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
 import { Link, useLocation } from "react-router-dom";
 import BoardLayout from "../board-layout/BoardLayout";
 
@@ -21,7 +19,7 @@ const Board: React.FC<{ title: string, board: string }> = ({ title, board }) => 
             <div id="children-wrapper">
                 {
                     threads.map((thread: any) => {
-                        return <Link to={`/${board}/thread/${thread.number}`} id='thread-link'><ThreadCard title={thread.title} description={thread.description} img={thread.img} /></Link>
+                        return <Link to={`/${board}/thread/${thread.id}`} id='thread-link'><ThreadCard title={thread.title} description={thread.description} img={thread.img} /></Link>
                     })
                 }
             </div>

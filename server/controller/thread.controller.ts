@@ -13,7 +13,7 @@ interface Thread {
 }
 
 export const getThread = async (req: Request, res: Response) => {
-    const { threadId } = req.body;
+    const { threadId } = req.params;
     if(!threadId) return res.status(400).send('Missing body');
 
     const thread = await Thread.findOne({ where: { id: threadId }, include: [Reply]});
@@ -29,7 +29,7 @@ export const getThreads = async (req: Request, res: Response) => {
 }
 
 export const createThread = async (req: Request, res: Response) => {
-    const threadData = req.body as Thread;  
+    const threadData = req.body as Thread;
     if(!threadData) return res.status(400).send('Missing body');
 
     await Thread.create({

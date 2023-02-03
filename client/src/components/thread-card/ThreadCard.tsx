@@ -1,5 +1,5 @@
 import React from 'react';
-import card from '../../assets/card.png';
+import URL from '../../constants/URL.json';
 
 interface Props {
     img: string,
@@ -10,7 +10,7 @@ interface Props {
 const ThreadCard: React.FC<Props> = (props) => {
     return (
         <div id="card-wrapper">
-            <img src={card} alt="" />
+            <img src={`${URL.URL}:${URL.PORT}/${props.img}`} alt="" />
             <div id="replies-img">
                 <p>R: 0 /</p>
                 <p> I: 0</p>
