@@ -15,8 +15,22 @@
     #text {
         margin-left: 10px;
 
-        h2 {
-            text-decoration: underline;
+        #title {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 2px solid $lightBlue;
+
+            #number {
+                cursor: pointer;
+
+                &:hover {
+                    color: $darkBlue;
+                }
+            }
+            
+            h2 {
+                margin-right: 10px;
+            }
         }
 
         & > * {

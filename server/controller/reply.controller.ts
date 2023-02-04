@@ -21,10 +21,10 @@ export const createReply = async (req: Request, res: Response) => {
     })
 
     await Reply.sync();
-    return res.send(200).send('Reply created successfully');
+    return res.status(200).send('Reply created successfully');
 }
 
-export const deleteThread = async (req: Request, res: Response) => {
+export const deleteReply = async (req: Request, res: Response) => {
     const { replyId } = req.body;
     if(!replyId) return res.status(400).send('Missing body');
 

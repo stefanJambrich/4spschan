@@ -1,10 +1,10 @@
 import express  from "express";
-import { createReply } from "../controller/reply.controller";
+import { createReply, deleteReply } from "../controller/reply.controller";
 import { upload } from "../middleware/file.middleware";
 
 const router = express.Router();
 
 router.post('/', createReply);
-router.delete('/');
+router.delete('/', deleteReply);
 
 module.exports = router;
