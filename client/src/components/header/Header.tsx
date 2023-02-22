@@ -27,6 +27,7 @@ const Header: React.FC<Props> = (props: Props) => {
         });
 
         const formData = new FormData();
+        //@ts-ignore
         formData.append('img', file);
         await axios({
             method: 'post',
@@ -34,6 +35,7 @@ const Header: React.FC<Props> = (props: Props) => {
             data: formData,
             headers: { 'Content-Type': 'multipart/form-data' }
         });
+        //@ts-ignore
         window.location.reload(false);
     }
 

@@ -19,7 +19,7 @@ const Board: React.FC<{ title: string, board: string }> = ({ title, board }) => 
             <div id="children-wrapper">
                 {
                     threads.map((thread: any) => {
-                        return <Link to={`/${board}/thread/${thread.id}`} id='thread-link'><ThreadCard title={thread.title} description={thread.description} img={thread.img} /></Link>
+                        return <Link to={`/${board}/thread/${thread.id}`} id='thread-link'><ThreadCard replies={thread.reply_tables.length} title={thread.title} description={thread.description} img={thread.img} /></Link>
                     })
                 }
             </div>

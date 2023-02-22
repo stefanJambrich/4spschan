@@ -1,0 +1,13 @@
+#reply-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 40px;
+    border: 4px solid $darkBlue;
+    padding: 10px;
+
+    img {
+        width: 10vmax;
+        margin-right: 20px;
+    }
+}
